@@ -1,0 +1,141 @@
+/* Global reset */
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+}
+
+/* Layout */
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Section */
+.left-section {
+  flex: 0 0 40%;
+  background-color: #e8f8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section h1 {
+  color: green;
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+/* Right Section */
+.right-section {
+  flex: 0 0 60%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container inside right section */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Box styling */
+.form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  border: 2px solid #2e8b57;
+}
+
+/* Toggle buttons */
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-toggle button {
+  width: 50%;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px 10px 0 0;
+  transition: background-color 0.3s;
+  outline: none;
+}
+
+.form-toggle .active {
+  background-color: #2e8b57;
+  color: white;
+}
+
+/* Form elements */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2e8b57;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #228b22;
+}
+
+.form a {
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+.form p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Optional: responsive tweaks */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
